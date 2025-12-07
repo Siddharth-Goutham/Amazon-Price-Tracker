@@ -45,10 +45,11 @@ budget=17000
 if float(price)<budget:
     with smtplib.SMTP(os.environ["SMTP_ADDRESS"],port=587) as connection:
         connection.starttls()
-        connection.login(user=os.environ["EMAIL_ADDRESS"],password=os.environ["EMAIL_PASSWORD"])
-        connection.sendmail(from_addr=os.environ["EMAIL_ADDRESS"],
-                            to_addrs=os.environ["EMAIL_ADDRESS"],
+        connection.login(user=os.environ["EMAIL"],password=os.environ["EMAIL_PASSWORD"])
+        connection.sendmail(from_addr=os.environ["EMAIL"],
+                            to_addrs=os.environ["EMAIL"],
                             msg=f"Subject:Price Drop⚠️ \n\nThe price for '{str(title)}' in amazon has dropped its "
                                 f"price to {price_text}. Go check it NOW 🚨\n {AMAZON_LINK}".encode("utf-8")
                             )
+
 
