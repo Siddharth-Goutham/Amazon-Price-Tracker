@@ -48,8 +48,9 @@ if float(price)<budget:
         connection.login(user=os.environ["EMAIL"],password=os.environ["EMAIL_PASSWORD"])
         connection.sendmail(from_addr=os.environ["EMAIL"],
                             to_addrs=os.environ["EMAIL"],
-                            msg=f"Subject:Price Drop⚠️ \n\nThe price for '{str(title)}' in amazon has dropped its "
+                            msg=f"Subject:Price Drop⚠️ \n\n*THIS IS AN AUTOMATED MAIL*\n\nThe price for '{str(title)}' in amazon has dropped its "
                                 f"price to {price_text}. Go check it NOW 🚨\n {AMAZON_LINK}".encode("utf-8")
                             )
+
 
 
