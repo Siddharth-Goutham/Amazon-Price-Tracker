@@ -1,4 +1,4 @@
-📦 Amazon Price Tracker (Python)
+📦 Amazon Price Tracker
 
 A Python-based Amazon Price Tracker that monitors product prices and sends an email notification when the price drops below a desired value.
 
