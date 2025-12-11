@@ -87,4 +87,5 @@ This project is useful for:
 👨‍💻 Author
 
 Siddharth Goutham  
-Python Project – Amazon Price Tracker
+Python Project – Amazon Price Tracker ©
+Date of Completion – 07 December 2025
